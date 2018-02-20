@@ -93,6 +93,40 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(tv.getText() + "/");
     }
 
+    public void onClickSeno(View miView)
+    {
+        TextView tv = (TextView) findViewById(R.id.textViewNumero) ;
+        tv.setText(tv.getText() + "sin(");
+    }
+
+    public void onClickCoseno(View miView)
+    {
+        TextView tv = (TextView) findViewById(R.id.textViewNumero) ;
+        tv.setText(tv.getText() + "cos(");
+    }
+
+    public void onClickTangente(View miView)
+    {
+        TextView tv = (TextView) findViewById(R.id.textViewNumero) ;
+        tv.setText(tv.getText() + "tan(");
+    }
+
+    public void onClickCuadrado(View miView)
+    {
+        TextView tv = (TextView) findViewById(R.id.textViewNumero) ;
+        tv.setText(tv.getText() + "^");
+    }
+    public void onClickParA(View miView)
+    {
+        TextView tv = (TextView) findViewById(R.id.textViewNumero) ;
+        tv.setText(tv.getText() + "(");
+    }
+    public void onClickParC(View miView)
+    {
+        TextView tv = (TextView) findViewById(R.id.textViewNumero) ;
+        tv.setText(tv.getText() + ")");
+    }
+
     public void onClickIgual(View miView)
     {
         try{
