@@ -51,14 +51,6 @@
                 android:layout_height="wrap_content"
                 android:onClick="clickImagen"
                 android:text="Imagen" />
-
-            <Button
-                android:id="@+id/btnGato"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="clickGato"
-                android:text="Gato" />
         </LinearLayout>
     </ScrollView>
 

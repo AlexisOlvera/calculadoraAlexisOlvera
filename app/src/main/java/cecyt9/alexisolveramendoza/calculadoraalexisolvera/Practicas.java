@@ -33,4 +33,9 @@ public class Practicas extends AppCompatActivity {
         startActivity(inte);
     }
 
+    public void clickGato(View view){
+        Intent inte = new Intent(this, gato.class);
+        startActivity(inte);
+    }
+
 }

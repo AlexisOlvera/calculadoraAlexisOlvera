@@ -26,7 +26,8 @@
         <activity android:name=".enviaMail" />
         <activity android:name=".Practicas" />
         <activity android:name=".navegador" />
-        <activity android:name=".imagen"></activity>
+        <activity android:name=".imagen" />
+        <activity android:name=".gato"></activity>
     </application>
 
 </manifest>
