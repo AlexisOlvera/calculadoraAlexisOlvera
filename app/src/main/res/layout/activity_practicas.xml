@@ -59,6 +59,14 @@
                 android:layout_height="wrap_content"
                 android:onClick="clickGato"
                 android:text="Gato" />
+
+            <Button
+                android:id="@+id/btnConecta4"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickConecta4"
+                android:text="Conecta 4" />
         </LinearLayout>
     </ScrollView>
 

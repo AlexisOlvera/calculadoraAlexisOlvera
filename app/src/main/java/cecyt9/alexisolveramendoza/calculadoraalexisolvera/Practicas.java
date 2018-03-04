@@ -38,4 +38,9 @@ public class Practicas extends AppCompatActivity {
         startActivity(inte);
     }
 
+    public void clickConecta4(View view){
+        Intent inte = new Intent(this, conecta4.class);
+        startActivity(inte);
+    }
+
 }

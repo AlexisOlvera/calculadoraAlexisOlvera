@@ -27,7 +27,8 @@
         <activity android:name=".Practicas" />
         <activity android:name=".navegador" />
         <activity android:name=".imagen" />
-        <activity android:name=".gato"></activity>
+        <activity android:name=".gato" />
+        <activity android:name=".conecta4"></activity>
     </application>
 
 </manifest>
