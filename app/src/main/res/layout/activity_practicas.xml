@@ -67,6 +67,14 @@
                 android:layout_height="wrap_content"
                 android:onClick="clickConecta4"
                 android:text="Conecta 4" />
+
+            <Button
+                android:id="@+id/btnMemorama"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickMemorama"
+                android:text="MEMORAMA" />
         </LinearLayout>
     </ScrollView>
 

@@ -28,7 +28,8 @@
         <activity android:name=".navegador" />
         <activity android:name=".imagen" />
         <activity android:name=".gato" />
-        <activity android:name=".conecta4"></activity>
+        <activity android:name=".conecta4" />
+        <activity android:name=".memorama"></activity>
     </application>
 
 </manifest>

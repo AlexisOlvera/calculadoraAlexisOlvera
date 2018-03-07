@@ -43,4 +43,8 @@ public class Practicas extends AppCompatActivity {
         startActivity(inte);
     }
 
+    public void clickMemorama(View view){
+        Intent inte = new Intent(this, memorama.class);
+        startActivity(inte);
+    }
 }
