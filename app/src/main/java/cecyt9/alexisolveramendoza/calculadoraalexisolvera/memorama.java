@@ -1,6 +1,8 @@
 package cecyt9.alexisolveramendoza.calculadoraalexisolvera;
 
+import android.print.PrintAttributes;
 import android.support.constraint.ConstraintLayout;
+import android.support.constraint.ConstraintSet;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,19 +31,28 @@ public class memorama extends AppCompatActivity implements View.OnClickListener{
         botones[4][1] = findViewById(R.id.patricio2);
         botones[5][0] = findViewById(R.id.emo);
         botones[5][1] = findViewById(R.id.emo2);
-        //RelativeLayout.LayoutParams rel_btn = new RelativeLayout.LayoutParams(
-        //        ConstraintLayout.LayoutParams.WRAP_CONTENT, ConstraintLayout.LayoutParams.WRAP_CONTENT);
-        //Random randomX = new Random(283), randomY = new Random(384);
-
+        ConstraintLayout.LayoutParams rel_btn = new ConstraintLayout.LayoutParams(
+                ConstraintLayout.LayoutParams.WRAP_CONTENT, ConstraintLayout.LayoutParams.WRAP_CONTENT);
+        Random randomX = new Random(), randomY = new Random();
+        //ConstraintLayout parentConstraintLayout = (ConstraintLayout) botones[0][0].getParent();
         for(int i = 0; i<6; i++){
             for(int j = 0; j<2; j++){
-                //rel_btn.leftMargin = randomX.nextInt();
-                //rel_btn.topMargin = randomY.nextInt();
-                //rel_btn.width = 90;
-                //rel_btn.height = 65;
+
+
+                //int xx = randomX.nextInt(295-10)+10;
+                //int yy = randomY.nextInt(1700)+1;
+                //rel_btn.leftMargin = xx;
+                //rel_btn.topMargin = yy;
+                //rel_btn.width = 250;
+                //rel_btn.height = 200;
                 botones[i][j].setImageResource(R.drawable.bienvenidos);
                 botones[i][j].setOnClickListener(this);
                 //botones[i][j].setLayoutParams(rel_btn);
+                //ConstraintSet set = new ConstraintSet();
+                //set.connect(botones[i][j].getId(), ConstraintSet.START,
+                //        ConstraintSet.PARENT_ID, ConstraintSet.START, xx);
+                //set.setMargin(botones[i][j].getId(), ConstraintSet.START, xx);
+                //set.applyTo(parentConstraintLayout);
             }
         }
     }
@@ -100,15 +111,20 @@ public class memorama extends AppCompatActivity implements View.OnClickListener{
                             botones[i][j].setEnabled(false);
                             botones[guarda1][guarda2].setEnabled(false);
                             ganas++;
-                            if(ganas>4){
+                            if(ganas>3){
                                 Toast.makeText(this, "Ganaste", Toast.LENGTH_LONG);
                             }
+                            break;
                         }else{
+
                             botones[i][j].setImageResource(R.drawable.bienvenidos);
                             botones[guarda1][guarda2].setImageResource(R.drawable.bienvenidos);
+                            guarda1 = 10;
+                            guarda2 = 10;
+                            break;
+
                         }
-                        guarda1 = 10;
-                        guarda2 = 10;
+
 
                     }
                 }
